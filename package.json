@@ -1,0 +1,9 @@
+{
+  "name": "@xuanmo/normalize.css",
+  "version": "1.0.0",
+  "private": false,
+  "description": "CSS default style reset.",
+  "main": "index.css",
+  "author": "Xuanmo <me@xuanmo.xin>",
+  "license": "MIT"
+}

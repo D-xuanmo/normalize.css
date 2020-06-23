@@ -1,0 +1,37 @@
+/* 去除内外边距 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+p,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  outline: 0;
+  border: 0;
+  background: none;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
