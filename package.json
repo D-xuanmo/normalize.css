@@ -1,6 +1,6 @@
 {
   "name": "@xuanmo/normalize.css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "CSS default style reset.",
   "main": "normalize.css",
