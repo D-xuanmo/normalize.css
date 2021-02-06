@@ -21,6 +21,21 @@ $margin: (
   }
 }
 
+// 内边距
+$padding: (
+  top: 5 10 15 20 30,
+  right: 5 10 15 20 30,
+  bottom: 5 10 15 20 30,
+  left: 5 10 15 20 30
+);
+@each $direction, $value in $padding {
+  @each $num in $value {
+    .p-#{str-slice($direction, 1, 1)}-#{$num}px {
+      padding-#{$direction}: #{$num}px;
+    }
+  }
+}
+
 // 单行文字显示省略号
 %ellipsis {
   overflow: hidden;
