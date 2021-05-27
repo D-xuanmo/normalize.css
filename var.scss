@@ -1,29 +1,3 @@
-// 文字对齐
-$align: left, center, right, justify;
-@each $str in $align {
-  .align-#{$str} {
-    text-align: $str;
-  }
-}
-
-// 内外边距；使用：m-t-5px 或 p-t-5px
-$margin: (
-  top: 5 10 15 20,
-  right: 5 10 15 20,
-  bottom: 5 10 15 20,
-  left: 5 10 15 20
-);
-$marginDirection: margin, padding;
-@each $direction, $value in $margin {
-  @each $num in $value {
-    @each $d in $marginDirection {
-      .#{str-slice($d, 1, 1)}-#{str-slice($direction, 1, 1)}-#{$num}px {
-        #{$d}-#{$direction}: #{$num}px;
-      }
-    }
-  }
-}
-
 // 单行文字显示省略号
 %ellipsis {
   overflow: hidden;
