@@ -1,5 +1,5 @@
 // 文字对齐
-$--align: left, center, right, justify;
+$--align: left, center, right, justify !default;
 @each $str in $--align {
   .align-#{$str} {
     text-align: $str;
@@ -12,7 +12,7 @@ $--margin: (
   right: 5 10 15 20,
   bottom: 5 10 15 20,
   left: 5 10 15 20
-);
+) !default;
 $--marginDirection: margin, padding;
 @each $direction, $value in $--margin {
   @each $num in $value {
@@ -25,7 +25,7 @@ $--marginDirection: margin, padding;
 }
 
 // display
-$--display: inline-block, block, flex;
+$--display: inline-block, block, flex !default;
 @each $item in $--display {
   .#{$item} {
     display: $item;
@@ -37,7 +37,7 @@ $--display: inline-block, block, flex;
 }
 
 // flex justify-content 使用：.f-justify-content--center
-$--flex-justify-content: flex-start, center, flex-end, space-between, space-around;
+$--flex-justify-content: flex-start, center, flex-end, space-between, space-around !default;
 @each $item in $--flex-justify-content {
   .f-justify-content--#{$item} {
     justify-content: $item;
@@ -45,7 +45,7 @@ $--flex-justify-content: flex-start, center, flex-end, space-between, space-arou
 }
 
 // flex align-items 使用：.f-align-items--center
-$--flex-align-items: flex-start, center, flex-end, baseline, stretch;
+$--flex-align-items: flex-start, center, flex-end, baseline, stretch !default;
 @each $item in $--flex-align-items {
   .f-align-items--#{$item} {
     align-items: $item;
